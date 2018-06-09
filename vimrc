@@ -40,20 +40,6 @@ set sm             " show matching braces, somewhat annoying...
 set nowrap         " don't wrap lines
 
 syntax on           " syntax highlighing
-if has("gui_running")
-    " See ~/.gvimrc
-    set guifont=Monospace\ 10  " use this font 
-    set lines=50       " height = 50 lines
-    set columns=100        " width = 100 columns
-    set background=light   " adapt colors for background
-    set selectmode=mouse,key,cmd
-    set keymodel=
-else
-    " colorscheme elflord    " use this color scheme
-    " set background=dark        " adapt colors for background
-    colorscheme molokai
-    let g:molokai_original = 1
-endif
 
 if has("autocmd")
     " Restore cursor position
@@ -183,6 +169,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
+Plugin 'tomasr/molokai'
+
 Plugin 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
@@ -237,7 +225,6 @@ let g:tagbar_type_javascript = {
 
 
 Plugin 'airblade/vim-gitgutter'
-
 " syntystic
 Plugin 'vim-syntastic/syntastic'
 " Syntastic options
@@ -307,3 +294,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
+set background=dark        " adapt colors for background
+colorscheme molokai
+let g:molokai_original = 1

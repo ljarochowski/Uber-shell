@@ -4,5 +4,5 @@ source ~/.safaribooks.conf
 current_dir=$PWD
 mkdir $folder 2>/dev/null
 cd $folder
-PATH=$PATH:~/bin/kindlegen safaribooks -u $user -p $pass -b $1 download
+PATH=$PATH:~/bin/kindlegen:~/Library/Python/2.7/bin safaribooks -u $user -p $pass -b $1 download
 cd $current_dir
