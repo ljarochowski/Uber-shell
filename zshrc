@@ -72,7 +72,6 @@ alias vi=/usr/local/bin/vim
 alias vim=nvim
 alias kindlegen=~/bin/kindlegen/kindlegen
 alias safari=~/bin/safari
-alias node='node --experimental-modules'
 alias vimrc='$EDITOR $HOME/.vimrc'
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -102,8 +101,8 @@ alias vimrc='$EDITOR $HOME/.vimrc'
 # alias zshconfig="$EDITOR ~/.zshrc"
 # alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 
-PATH="/Users/ljarochowski/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/Users/ljarochowski/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/ljarochowski/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/ljarochowski/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/ljarochowski/perl5"; export PERL_MM_OPT;
+PATH="~/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="~/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="~/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"~/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=~/perl5"; export PERL_MM_OPT;

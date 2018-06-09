@@ -31,6 +31,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 echo Installing Oh My ZSH
 brew install zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 echo Installing Python
 brew install python@2
@@ -46,6 +47,9 @@ brew install neovim
 echo copying vimrc to nvim/init.vim
 mkdir -p ~/.config/nvim
 ln -sf $dir/vimrc ~/.config/nvim/init.vim
+
+echo Installing iTerm2
+brew cask install iterm2
 
 echo Installing YCM
 cd ~/.vim/bundle/YouCompleteMe
