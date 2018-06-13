@@ -34,7 +34,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 echo Installing Python
-brew install python@2
+pip install python@2
 
 echo Installing SafariBooks script
 git clone https://github.com/ViciousPotato/safaribooks.git $dir/external/safaribooks
