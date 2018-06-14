@@ -34,7 +34,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 echo Installing Python
-pip install python@2
+brew install python@2
 
 echo Installing SafariBooks script
 git clone https://github.com/ViciousPotato/safaribooks.git $dir/external/safaribooks
@@ -42,7 +42,7 @@ cd $dir/external/safaribooks
 pip install --user .
 
 echo Installing NeoVIM
-brew install neovim
+pip install neovim
 
 echo copying vimrc to nvim/init.vim
 mkdir -p ~/.config/nvim
