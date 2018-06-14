@@ -42,7 +42,7 @@ cd $dir/external/safaribooks
 pip install --user .
 
 echo Installing NeoVIM
-brew install neovim
+pip install neovim
 
 echo copying vimrc to nvim/init.vim
 mkdir -p ~/.config/nvim
